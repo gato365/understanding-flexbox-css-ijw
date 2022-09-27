@@ -8,22 +8,41 @@
 
     <style>
 
-        #take1 section {
-                margin-bottom: 10px;
-                display: flex;
-            }
-        .box-1{
-            background-color: rgb(254, 218, 152);
+        #flex-container section {
+            background-color: orange;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            /* padding: 10px; */
+            /* margin-bottom: 10px; */
+            width: 100%;
+        }
+        .box{
             color: green;
+            
+        
 
+        }
+        section{
+            width: 100%;
+        }
+
+        #about-me-label{
+            background-color: rgb(100, 100, 179);
+            width: 100%;
+        }
+        #about-me-text{
+            background-color: pink;
+            
         }
     </style>
 </head>
 
 <body>
-    <div class = "flex-container">
+    <div id = "flex-container">
         <section>
-            <div class = "box-1"> Box 1</div>
+            <div class = "box" id = "about-me-label">About Me</div>
+            <div class = "box" id = "about-me-text">I am a person</div>
         </section>        
     </div>
 
