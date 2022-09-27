@@ -38,11 +38,21 @@
            height: 400px; 
 
        }
+       .box3{
+           
+            
+           width: 100%;
+           /* Issue 1: this is hard code, how can I make this a percentage */
+           height: 100px; 
+
+       }
         .about-me{display: flex;}
         .projects{display: flex;
         padding-top: 10px;
         }
-        
+        .contact-me{display: flex;
+        padding-top: 10px;
+        }
 
         #about-me-left{
             background-color: lightpink;
@@ -77,6 +87,25 @@
             padding-left: 12px;
     
         }
+
+
+        #contact-me-left{
+            background-color: lightpink;
+            width: 30%;
+            display: flex;
+            justify-content: right;
+            font-size: 30px;
+            border-right: 6px solid green;
+        
+            
+
+        }
+        #contact-me-right{  
+            background-color: aqua; 
+            width: 70%;
+            padding-left: 12px;
+    
+        }
     </style>
 </head>
 
@@ -89,7 +118,12 @@
         <section class="projects">
             <div class = "box2" id = "projects-left">Project</div>
             <div class = "box2" id = "projects-right">Project Box</div>
-        </section>         
+        </section> 
+        <section class="contact-me">
+            <div class = "box3" id = "contact-me-left">Contact</div>
+            <div class = "box3" id = "contact-me-right">Contact Box</div>
+        </section> 
+        
     </div>
 
 
