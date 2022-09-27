@@ -22,7 +22,7 @@
             width: 100%;
             height: 100%;
         }
-        .box{
+        .box1{
            
             
             width: 100%;
@@ -30,13 +30,21 @@
             height: 200px; 
 
         }
-        .about-me{
-            display: flex;
-            /* width: 100%; */
-            /* height: 20%; */
-        }
+        .box2{
+           
+            
+           width: 100%;
+           /* Issue 1: this is hard code, how can I make this a percentage */
+           height: 400px; 
 
-        #about-me-label{
+       }
+        .about-me{display: flex;}
+        .projects{display: flex;
+        padding-top: 10px;
+        }
+        
+
+        #about-me-left{
             background-color: lightpink;
             width: 30%;
             display: flex;
@@ -46,12 +54,28 @@
             
 
         }
-        #about-me-text{  
+        #about-me-right{  
             background-color: aqua; 
             width: 70%;
             padding-left: 12px;
+    
+        }
+        #projects-left{
+            background-color: lightpink;
+            width: 30%;
+            display: flex;
+            justify-content: right;
+            font-size: 30px;
+            border-right: 6px solid green;
+        
             
- 
+
+        }
+        #projects-right{  
+            background-color: aqua; 
+            width: 70%;
+            padding-left: 12px;
+    
         }
     </style>
 </head>
@@ -59,9 +83,13 @@
 <body>
     <div id = "flex-container">
         <section class="about-me">
-            <div class = "box" id = "about-me-label">About Me</div>
-            <div class = "box" id = "about-me-text">I am a person</div>
-        </section>        
+            <div class = "box1" id = "about-me-left">About Me</div>
+            <div class = "box1" id = "about-me-right">I am a person</div>
+        </section>  
+        <section class="projects">
+            <div class = "box2" id = "projects-left">Project</div>
+            <div class = "box2" id = "projects-right">Project Box</div>
+        </section>         
     </div>
 
 
@@ -70,7 +98,7 @@
 </body>
 
 
-<!-- What to do? Comment 
+<!-- General Issues:
     1) Comment out background colors for divs in section  
     2) Make my code use Rob's flex version rather percents
     3) Change length of side the left section (it is green)
