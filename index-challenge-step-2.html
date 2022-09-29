@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Test Thing</title>
+        <style>
+            #take1 {
+
+            }
+
+            #take1 section {
+                margin-bottom: 10px;
+                display: flex;
+            }
+
+            #take1 section div:nth-child(1) {
+                padding: 10px;
+                background-color: lightpink;
+                width: 150px;
+                border-right: 4px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+            }
+
+            #take1 section div:nth-child(2) {
+                background-color: aqua;
+                flex-grow: 1;
+                padding: 20px;
+                margin-left: 20px;
+            }
+
+       </style>
+    </head>
+    <body>
+        <div id="take1">
+            <section>
+                <div>About Me</div>
+                <div>I am a person</div>
+            </section>
+            <section>
+                <div>Projects</div>
+                <div>
+                    <ul>
+                        <li>Project 1</li>
+                        <li>Project 2</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div>Other Stuff</div>
+                <div>Actual content</div>
+            </section>
+        </div>
+        <br/>
+        
+    </body>
+</html>

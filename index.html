@@ -7,139 +7,161 @@
     <title>Understanding Flexbox</title>
 
     <style>
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
-    body{
-        background-color: black;        
-    }
-    header{  
-        background-color:#163055;
-        width: 100%;
-        text-align: right;
-        padding-top: 15px;
-        margin-right: 20px;
-        float: none;
-        font-size: 20px;
-    }
-    header ul {
-        list-style-type: none;
-        color: #98CAC9;
-    }
-    header ul li {
-        display: inline-block;
-        margin-left: 25px;
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
 
-    }
-        nav{
-            background :violet;
-            height : 40px;
-            float :left;
-            width : 100%;
-            color : #ffffff;
+        body {
+            background-color: black;
+        }
+
+        header {
+            background-color: #163055;
+            width: 100%;
+            text-align: right;
+            padding-top: 15px;
+            margin-right: 20px;
+            float: none;
+            font-size: 20px;
+        }
+
+        header ul {
+            list-style-type: none;
+            color: #98CAC9;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin-left: 25px;
+
+        }
+
+        nav {
+            background: violet;
+            height: 40px;
+            float: left;
+            width: 100%;
+            color: #ffffff;
         }
 
 
         #flex-container section {
             background-color: #EDEDF7;
-            color: #163055; 
+            color: #163055;
             display: flex;
             justify-content: left;
             align-items: center;
             /* padding: 10px; */
             /* margin-bottom: 10px; */
             width: 100%;
-            height: 100%;
+            height: 33vh;
         }
-        .box1{
-           
-            
+
+        .box1 {
+
+
             width: 100%;
             /* Issue 1: this is hard code, how can I make this a percentage */
-            height: 200px; 
-
-        }
-        .box2{
-           
-            
-           width: 100%;
-           /* Issue 1: this is hard code, how can I make this a percentage */
-           height: 400px; 
-
-       }
-       .box3{
-           
-            
-           width: 100%;
-           /* Issue 1: this is hard code, how can I make this a percentage */
-           height: 100px; 
-
-       }
-        .about-me{display: flex;}
-        .projects{display: flex;
-        padding-top: 10px;
-        }
-        .contact-me{display: flex;
-        padding-top: 10px;
+            height: 30vh;
+            align-items: center;
         }
 
-        #about-me-left{
-            /* background-color: lightpink; */
-            width: 30%;
-            display: flex;
-            justify-content: right;
-            font-size: 30px;
-            border-right: 6px solid #163055;
-            
+        .box2 {
+
+
+            width: 100%;
+            /* Issue 1: this is hard code, how can I make this a percentage */
+            height: 45vh;
 
         }
-        #about-me-right{  
-            /* background-color: aqua;  */
-            width: 70%;
-            padding-left: 12px;
-    
-        }
-        #projects-left{
-            /* background-color: lightpink; */
-            width: 30%;
-            display: flex;
-            justify-content: right;
-            font-size: 30px;
-            border-right: 6px solid #163055;
+
+        .box3 {
+
+
+            width: 100%;
+            /* Issue 1: this is hard code, how can I make this a percentage */
+            height: 5vh;
         
-            
+            bottom: 0;
 
         }
-        #projects-right{  
-            /* background-color: aqua;  */
-            width: 70%;
-            padding-left: 12px;
-    
+
+        .about-me {
+            display: flex;
+            height: 33%;
         }
 
+        .projects {
+            display: flex;
+            padding-top: 10px;
+        }
 
-        #contact-me-left{
+        .contact-me {
+            display: flex;
+            padding-top: 10px;
+        }
+
+        #about-me-left {
             /* background-color: lightpink; */
             width: 30%;
             display: flex;
             justify-content: right;
             font-size: 30px;
             border-right: 6px solid #163055;
-        
-            
+
 
         }
-        #contact-me-right{  
+
+        #about-me-right {
             /* background-color: aqua;  */
             width: 70%;
             padding-left: 12px;
-    
+
         }
 
-        #contact-me-right{
+        #projects-left {
+            /* background-color: lightpink; */
+            width: 30%;
+            display: flex;
+            justify-content: right;
+            font-size: 30px;
+            border-right: 6px solid #163055;
+
+
+
+        }
+
+        #projects-right {
+            /* background-color: aqua;  */
+            width: 70%;
+            padding-left: 12px;
+
+        }
+
+
+        #contact-me-left {
+            /* background-color: lightpink; */
+            width: 30%;
+            display: flex;
+            justify-content: right;
+            font-size: 30px;
+            border-right: 6px solid #163055;
+
+
+
+        }
+
+        #contact-me-right {
+            /* background-color: aqua;  */
+            width: 70%;
+            padding-left: 12px;
+
+        }
+
+        #contact-me-right {
             /* background-color:pink; */
-            float :left;
+            float: left;
             text-align: right;
             float: right;
         }
@@ -147,13 +169,14 @@
         #contact-me-right ul {
             list-style-type: none;
         }
+
         #contact-me-right ul li {
             display: inline-block;
             margin-left: 25px;
             padding-right: 20px;
         }
 
-        .project-flex-container{
+        .project-flex-container {
             background-color: red;
             display: flex;
             flex-wrap: wrap;
@@ -162,111 +185,111 @@
 
         }
 
-        #big-box{
-          background-color: white;
-          height: 50%;
-          width: 100%;
+        #big-box {
+            background-color: white;
+            height: 50%;
+            width: 100%;
         }
 
-        #row2{
-          background-color: yellow;
-          height: 25%;
-          width: 100%;
+        #row2 {
+            background-color: yellow;
+            height: 25%;
+            width: 100%;
 
         }
 
-        #row3{
+        #row3 {
             background-color: purple;
             height: 25%;
             width: 100%;
         }
-
-
-
-
     </style>
 </head>
 
 <body>
 
-    <header >
+    <header>
         <ul>
-          <li>
-            <a link="#about-me">About Me</a>
-          </li>
-          <li>
-            <a link="#work">Work</a>
-          </li>
-          <li>
-            <a link="#contact-me">Contact Me</a>
-          </li>
-          <li>
-            <a link="#contact-me">Resume</a>
-          </li>
+            <li>
+                <a link="#about-me">About Me</a>
+            </li>
+            <li>
+                <a link="#work">Work</a>
+            </li>
+            <li>
+                <a link="#contact-me">Contact Me</a>
+            </li>
+            <li>
+                <a link="#contact-me">Resume</a>
+            </li>
         </ul>
-      </header>
-    
-      <!-- Part B: Image of Middle Section -->
-      <nav> 
+    </header>
+
+    <!-- Part B: Image of Middle Section -->
+    <nav>
         Love yes
-      </nav>
+    </nav>
 
 
-    
-    <div id = "flex-container">
+
+    <div id="flex-container">
         <section class="about-me">
-            <div class = "box1" id = "about-me-left">About Me</div>
-            <div class = "box1" id = "about-me-right">
-                Dr. Williams is dedicated to changing the lives of all his students by initially believing in their ability
-                to learn data science, machine learning, and statistics. He is also the chief curriculum developer for the
-                math worksheets found in GATO365 Math Boot Camp. He spends most of his time developing and designing curricula
-                for all audiences so that every student has the opportunity to learn complicated concepts. Dr. Williams has a Ph.D.
+            <div class="box1" id="about-me-left">About Me</div>
+            <div class="box1" id="about-me-right">
+                Dr. Williams is dedicated to changing the lives of all his students by initially believing in their
+                ability
+                to learn data science, machine learning, and statistics. He is also the chief curriculum developer for
+                the
+                math worksheets found in GATO365 Math Boot Camp. He spends most of his time developing and designing
+                curricula
+                for all audiences so that every student has the opportunity to learn complicated concepts. Dr. Williams
+                has a Ph.D.
                 in psychometrics while earning a master's in statistics and mathematics.
             </div>
-        </section>  
+        </section>
         <section class="projects">
-            <div class = "box2" id = "projects-left">Project</div>
-            <div class = "box2" id = "projects-right">
+            <div class="box2" id="projects-left">Project</div>
+            <div class="box2" id="projects-right">
 
 
-                <div class = "project-flex-container">
-                    <div id = "big-box">row1</div>
-                    <div id = "row2">
+                <div class="project-flex-container">
+                    <div id="big-box">row1</div>
+                    <div id="row2">
                         <div>left</div>
                         <div>right</div>
                     </div>
-                    <div id = "row3">
+                    <div id="row3">
                         <div>left</div>
                         <div>right</div>
                     </div>
                 </div>
 
             </div>
-        </section> 
+        </section>
         <section class="contact-me">
-            <div class = "box3" id = "contact-me-left">Contact</div>
-            <div class = "box3" id = "contact-me-right">
+            <div class="box3" id="contact-me-left">Contact</div>
+            <div class="box3" id="contact-me-right">
                 <ul>
                     <li>
-                      <a href="#love">(732)-207-7321</a>
+                        <a href="#love">(732)-207-7321</a>
                     </li>
                     <li>
-                      <a href="#love">immanuelwilliams@gato365.com</a>
+                        <a href="#love">immanuelwilliams@gato365.com</a>
                     </li>
                     <li>
-                      <a href="https://github.com/gato365">GitHub</a>
+                        <a href="https://github.com/gato365">GitHub</a>
                     </li>
                     <li>
-                      <a href="https://www.gato365.com/">GATO365</a>
+                        <a href="https://www.gato365.com/">GATO365</a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/immanuelwilliams/">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/immanuelwilliams/">LinkedIn</a>
                     </li>
                 </ul>
 
             </div>
-        </section> 
-        
+        </section>
+
     </div>
 
 
