@@ -14,9 +14,29 @@
                 * flex-direction: row;
                 * flex-wrap: wrap;
                 */
+
+                /* What we are doing here changing the direction of the flex if we do it by row there we contingent basically pixels PX. However if we flexed by calling it doesn't make sense because the height of a website is infinite open 
+                flex-flow: row wrap;
+                OR
+                flex-flow: column wrap;
+
+                The following just reverse the order of the boxes
+                 flex-flow: row-reverse wrap;
+                 There are more.....
+                */
                 flex-flow: row wrap;
                 
-                /* Then we define how is distributed the remaining space */
+                /* Then we define how is distributed the remaining space (correct)
+                justify-content: space-around;
+
+                The following puts space around the boxs
+                justify-content: space-between;
+
+                Puts everything in the center
+                justify-content: center;
+
+                There are more.....
+                */
                 justify-content: space-around;
                 
                 padding: 0;
@@ -46,12 +66,7 @@
                     <li class="flex-item">4</li>
                     <li class="flex-item">5</li>
                     <li class="flex-item">6</li>
-                    <li class="flex-item">7</li>
-                    <li class="flex-item">8</li>
-                    <li class="flex-item">9</li>
-                    <li class="flex-item">10</li>
-                    <li class="flex-item">11</li>
-                    <li class="flex-item">12</li>
+
 
                   </ul>
             </body>
